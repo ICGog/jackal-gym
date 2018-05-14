@@ -27,6 +27,7 @@ source /opt/ros/indigo/setup.bash
 cd ~/catkin_ws/
 catkin_make
 catkin_make install
+source devel/setup.bash
 ```
 
 # Run the Jackal Gazebo simulation
@@ -44,6 +45,9 @@ roslaunch jackal-gym jackal_world.launch config:=front_bumblebee2
 Run in a different terminal:
 ```console
 ./connect_to_container.sh <container_id>
+cd ~/catkin_ws/
+source /opt/ros/indigo/setup.bash
+source devel/setup.bash
 roslaunch jackal-gym jackal_rl.launch
 
 ```
@@ -52,5 +56,8 @@ roslaunch jackal-gym jackal_rl.launch
 If you want to visualize camera and LiDAR feeds you can start rviz by executing the following commands:
 ```console
 ./connect_to_container.sh <container_id>
+cd ~/catkin_ws/
+source /opt/ros/indigo/setup.bash
+source devel/setup.bash
 roslaunch jackal_viz view_robot.launch
 ```
