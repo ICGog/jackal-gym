@@ -1,0 +1,13 @@
+alpha: 0.1
+gamma: 0.8
+epsilon: 0.9
+epsilon_discount: 0.999
+num_episodes: 5
+num_steps: 100
+desired_pose:
+    x: 14.0
+    y: 1.0
+    z: 0.7
+max_incl: 0.9   # in rads
+speed: 1.0      # in m/s
+step_sleep: 1.5 # in seconds

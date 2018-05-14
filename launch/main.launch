@@ -1,0 +1,5 @@
+<launch>
+    <rosparam command="load" file="$(find jackal-gym)/config/params.yaml"/>
+    <param name="/use_sim_time" value="true"/>
+    <node pkg="jackal-gym" name="training" type="train.py" output="screen"/>
+</launch>
